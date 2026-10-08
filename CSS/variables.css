@@ -1,0 +1,61 @@
+:root {
+    /* ===========================
+       COLORS (Automotive Precision)
+       =========================== */
+    --bg-dark: #1A1A1A;
+    --bg-darker: #111111;
+    --bg-light: #2A2A2A;
+    --accent-orange: #FF5E00;
+    --text-main: #FFFFFF;
+    --text-muted: #A0A0A0;
+    --border-color: #333333;
+
+    /* ===========================
+       TYPOGRAPHY
+       =========================== */
+    --font-heading: 'Bebas Neue', 'Anton', sans-serif;
+    --font-body: 'Barlow', 'Inter', sans-serif;
+    --font-accent: 'Syncopate', 'Orbitron', sans-serif;
+
+    /* ===========================
+       SPACING & LAYOUT
+       =========================== */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+
+    --transition-fast: 0.2s ease-in-out;
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Global Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+a { color: var(--accent-orange); text-decoration: none; transition: color var(--transition-fast); }
+a:hover { color: var(--text-main); }
+
+a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--accent-orange);
+    outline-offset: 4px;
+}
+
+.container { max-width: 1300px; margin: 0 auto; padding: 0 var(--space-md); }

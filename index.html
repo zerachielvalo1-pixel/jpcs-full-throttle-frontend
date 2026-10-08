@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPCS-TSU Code Sprint | Trackside Report</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Bebas+Neue&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- BROADCAST BAR -->
+    <div class="broadcast-bar">
+        <span class="live-dot"></span>
+        <span>LIVE | JPCS-TSU CODE SPRINT 2026 | ROUND 01 QUALIFIERS</span>
+    </div>
+
+    <!-- NAV -->
+    <nav>
+        <div class="container nav-inner">
+            <div class="logo">JPCS-TSU <span>//</span> CODE SPRINT</div>
+            <div class="starting-lights" aria-hidden="true">
+                <span class="light"></span><span class="light"></span><span class="light"></span>
+                <span class="light"></span><span class="light"></span>
+            </div>
+            <div class="nav-links">
+                <a href="#leaderboard">Leaderboard</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#podium">Podium</a>
+            </div>
+            <a href="#register" class="nav-cta"><span>REGISTER</span></a>
+        </div>
+    </nav>
+
+    <!-- HERO (Brutalist Split Layout) -->
+    <header class="hero">
+        <div class="hero-grid">
+            <!-- Left: Stark Red Block -->
+            <div class="hero-left">
+                <h1 class="hero-title">
+                    <span class="outline">TSU</span><br>
+                    GRAND<br>
+                    PRIX
+                </h1>
+                <div class="hero-meta">
+                    <span>ROUND 01 // QUALIFIERS</span>
+                    <span>EST. 2026</span>
+                </div>
+            </div>
+            
+            <!-- Right: Data & CTA -->
+            <div class="hero-right">
+                <div class="broadcast-tag"><span>LIVE FROM TSU</span></div>
+                <p class="hero-subtitle">The ultimate coding tournament for TSU CS students. Build fast, debug faster, and claim the podium.</p>
+                <div class="hero-ctas">
+                    <a href="#register" class="btn-primary">REGISTER TEAM</a>
+                    <a href="#schedule" class="btn-secondary">VIEW SCHEDULE</a>
+                </div>
+                
+                <!-- Countdown (Timing Board) -->
+                <aside class="hero-timer">
+                    <div class="timer-header">
+                        <span class="live-dot"></span> TIME TO LIGHTS OUT
+                    </div>
+                    <div class="countdown" aria-live="polite" aria-label="Countdown to race start">
+                        <div class="countdown-box"><span id="days">02</span><small>Days</small></div>
+                        <div class="countdown-box"><span id="hours">14</span><small>Hours</small></div>
+                        <div class="countdown-box"><span id="minutes">30</span><small>Mins</small></div>
+                        <div class="countdown-box"><span id="seconds">15</span><small>Secs</small></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </header>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+            <span>REGISTRATION OPEN FOR ALL TSU CS STUDENTS</span>
+            <span>QUALIFIERS BEGIN SOON</span>
+            <span>FOLLOW #FULLTHROTTLEFRONTEND FOR UPDATES</span>
+            <span>PRIZES: 500 PHP / 300 PHP / 200 PHP</span>
+            <span>JPCS-TSU // CODE SPRINT 2026</span>
+        </div>
+    </div>
+
+    <!-- LEADERBOARD -->
+    <section id="leaderboard" class="leaderboard-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-num">01</div>
+                <div>
+                    <div class="section-kicker">TRACKSIDE REPORT</div>
+                    <h2>Live Telemetry</h2>
+                </div>
+            </div>
+            <div class="leaderboard-rows">
+                <div class="leaderboard-row rank-1">
+                    <div class="row-rank">01</div>
+                    <div class="row-team">[TEAM NAME]</div>
+                    <div class="row-points">[REAL DATA]</div>
+                    <div class="row-status"><span>RACING</span></div>
+                </div>
+                <div class="leaderboard-row">
+                    <div class="row-rank">02</div>
+                    <div class="row-team">[TEAM NAME]</div>
+                    <div class="row-points">[REAL DATA]</div>
+                    <div class="row-status"><span>RACING</span></div>
+                </div>
+                <div class="leaderboard-row">
+                    <div class="row-rank">03</div>
+                    <div class="row-team">[TEAM NAME]</div>
+                    <div class="row-points">[REAL DATA]</div>
+                    <div class="row-status pit"><span>IN PIT</span></div>
+                </div>
+                <div class="leaderboard-row">
+                    <div class="row-rank">04</div>
+                    <div class="row-team">[TEAM NAME]</div>
+                    <div class="row-points">[REAL DATA]</div>
+                    <div class="row-status pit"><span>IN PIT</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="schedule-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-num">02</div>
+                <div>
+                    <div class="section-kicker">RACE CONTROL</div>
+                    <h2>Race Calendar</h2>
+                </div>
+            </div>
+            <div class="lap-timeline">
+                <div class="lap-item">
+                    <div class="lap-marker">LAP<br>01</div>
+                    <div class="lap-content">
+                        <h3>Qualifiers</h3>
+                        <div class="lap-date">[REAL DATE]</div>
+                        <p>Individual sprint. Top 16 coders advance to the main grid.</p>
+                    </div>
+                </div>
+                <div class="lap-item">
+                    <div class="lap-marker">LAP<br>02</div>
+                    <div class="lap-content">
+                        <h3>Semi-Finals</h3>
+                        <div class="lap-date">[REAL DATE]</div>
+                        <p>Team relay. 3-hour build sprint. Communication is key.</p>
+                    </div>
+                </div>
+                <div class="lap-item">
+                    <div class="lap-marker">LAP<br>03</div>
+                    <div class="lap-content">
+                        <h3>Grand Finals</h3>
+                        <div class="lap-date">[REAL DATE]</div>
+                        <p>Live presentation. The ultimate podium finish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PODIUM PRIZES -->
+    <section id="podium" class="prizes-section">
+        <div class="container">
+            <h2 class="prizes-title">PRIZES</h2>
+            <div class="podium">
+                <div class="podium-step step-2">
+                    <div class="podium-info">
+                        <div class="podium-rank">2ND</div>
+                        <div class="podium-amount">300 PHP</div>
+                        <div class="podium-cert">+ Certificate</div>
+                    </div>
+                    <div class="podium-block"></div>
+                </div>
+                <div class="podium-step step-1">
+                    <div class="podium-info">
+                        <div class="podium-rank">1ST</div>
+                        <div class="podium-amount">500 PHP</div>
+                        <div class="podium-cert">+ Certificate</div>
+                    </div>
+                    <div class="podium-block"></div>
+                </div>
+                <div class="podium-step step-3">
+                    <div class="podium-info">
+                        <div class="podium-rank">3RD</div>
+                        <div class="podium-amount">200 PHP</div>
+                        <div class="podium-cert">+ Certificate</div>
+                    </div>
+                    <div class="podium-block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTER -->
+    <section id="register" class="register-section">
+        <div class="container register-content">
+            <div class="broadcast-tag"><span>ENTRY OPEN</span></div>
+            <h2>SECURE YOUR<br>GRID POSITION</h2>
+            <p>Registration for the Code Sprint is opening soon. Save the date and prepare your team.</p>
+            <div class="register-placeholder">[FORM COMING SOON]</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2026 JPCS - TSU College of Computer Studies. Full Throttle Frontend Challenge.</p>
+            <p style="margin-top: var(--space-sm); font-size: 0.75rem; letter-spacing: 2px;">#JPC52627 #WeAreJPCSTSU #FullThrottleFrontend</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
